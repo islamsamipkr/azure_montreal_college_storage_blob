@@ -8,6 +8,9 @@ terraform{
       required_version=">=1.4.0"  #This is the version of Terraform 
 }
 provider "azurerm" {
+
+    features{}
+    skip_provider_registration=true
     client_id=var.client_id
     client_secret=var.client_secret
     subscription_id=var.subscription_id
